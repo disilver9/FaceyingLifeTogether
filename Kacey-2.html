@@ -1,0 +1,443 @@
+<!doctype html>
+<html lang="en" class="h-100" data-bs-theme="auto">
+  <head><script src="assets/js/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors, customized by Steven Facey">
+    <meta name="generator" content="Hugo 0.115.4">
+    <title>Faceying-Life-together</title>
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/cover/">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+
+      }
+
+     @media(max-width:950px){
+        #details{
+            display: none !important;
+        }
+    }
+
+    @media(max-width:410px){
+        #tabletDetails{
+            display: none !important;
+        }
+    }
+
+    @media(min-width:949px){
+        #tabletDetails{
+            display: none !important;
+        }
+    }
+
+    @media(min-width:409px){
+        #mobileDetails{
+            display: none !important;
+        }
+    } 
+    
+    .bgimg, .bgimg2, .bgimg3, .bgimg4,.bgimg5,.bgimg6 {
+        min-height: 100%;
+        max-width: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .bgimg{
+        background-image: url("LandingPage2.jpg")
+    }
+    .bgimg2 {background-image: url("WeddingDetails.jpg")}
+    .bgimg3 {background-image: url("Background-1.jpg")}
+    .bgimg4 {background-image: url("finerDetails.jpg")}
+    .bgimg5 {background-image: url("WeddingDetailsMobile.jpg")}
+    .bgimg6 {background-image: url("WeddingDetailsTablet.jpg")}
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+
+      #clockdiv{
+	font-family:"Gotham", sans-serif;
+	color: #fff;
+	display: inline-block;
+	font-weight: 100;
+	text-align: center;
+	font-size: 20px;
+    }
+
+    #clockdiv > div{
+        padding: 10px;
+        border-radius: 3px;
+        /* background: #FFD700; */
+        display: inline-block;
+    }
+
+    #clockdiv div > span{
+        padding: 15px;
+        border-radius: 50%;
+        background: #355E3B;
+        display: inline-block;
+    }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+  </head>
+<body class="h-100">
+    
+<div class="d-flex container-fluid  align-items-center justify-content-center text-center text-bg-dark bgimg">        
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+
+    <main class="px-3 ">
+        <h1>Steven & Kristen</h1>
+        <p class="lead"><i class="bi bi-calendar4-week"></i> <b>October 14, 2023</b></p>
+        
+        <div id="clockdiv">
+            <div>
+            <span class="days"></span>
+            <div class="smalltext">Days</div>
+            </div>
+            <div>
+            <span class="hours"></span>
+            <div class="smalltext">Hours</div>
+            </div>
+            <div>
+            <span class="minutes"></span>
+            <div class="smalltext">Minutes</div>
+            </div>
+            <div>
+            <span class="seconds"></span>
+            <div class="smalltext">Seconds</div>
+            </div>
+        </div>
+        
+        <p class="lead">
+            <a href="#bio" class="btn btn-lg btn-light fw-bold border-white bg-white opacity-75">What's Happening
+                <b><i class="bi bi-chevron-down"></i></b>
+            </a>
+        </p>
+    </main>
+
+    </div>
+</div>
+<div class="d-flex container-fluid bgimg3" id="bio">
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="ProfilePicture.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h3 class="display-5 fw-bold text-body-emphasis lh-1 mb-3" style="color: #355E3B !important;" >Steven and Kristen</h3>
+            <hr style="width:50px;border:5px solid #355E3B !important;">
+            <p class="lead">After seven years, a thousand memories, a million laughs, and one spoiled dog, we're thrilled to announce that we're finally tying the knot.
+                In honour of our union, we would like to celebrate our joint future surrounded by the family and friends who have touched our lives. 
+            Consider this your official invitation to save the date and join us for a day filled with joy and heartfelt moments, marking the beginning of our 
+            blessed journey together.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <a href="#details" class="btn btn-success btn-lg px-4 me-md-2">View Details <i class="bi bi-chevron-down"></i></a>
+              <!-- <button type="button" class="btn btn-success btn-lg px-4 me-md-2">View Details</button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+<div class="d-flex container-fluid text-center bgimg2" id="details" style="position: relative;">
+    <a href="#moreDetails" class="btn btn-lg btn-outline-success fw-bold  bg-white" style="position: absolute; bottom:10px; right: 50px;">More Details
+        <i class="bi bi-chevron-down"></i>
+    </a>
+</div>
+<div class="d-flex container-fluid text-center bgimg5" id="mobileDetails" style="position: relative;">
+    <a href="#moreDetails" class="btn btn-lg btn-outline-success fw-bold  bg-white" style="position: absolute; bottom:10px; right: 50px;">More Details
+        <i class="bi bi-chevron-down"></i>
+    </a>
+</div>
+<div class="d-flex container-fluid text-center bgimg6" id="tabletDetails" style="position: relative;">
+  <a href="#moreDetails" class="btn btn-lg btn-outline-success fw-bold  bg-white" style="position: absolute; bottom:10px; right: 50px;">More Details
+      <i class="bi bi-chevron-down"></i>
+  </a>
+</div>
+<div class="container-fluid h-100" id="moreDetails">
+    <div class="row h-100">
+        <div class="col-sm-5 bgimg4">
+             
+        </div>
+        <div class="col-sm-7 align-items-center justify-content-center bgimg3">
+            <div class="d-flex flex-column flex-md-row p-4 gap-4 py-md-5 ">
+                <div>
+                    
+                </div>
+                
+                <div class="list-group">
+                  <h3 class="display-6 fw-bold text-body-emphasis lh-1 mb-3 opacity-75" style="color: #355E3B !important;">The Finer Details</h3>
+                  <hr style="width:50px;border:5px solid #355E3B !important;">
+                    </br>
+                  <div class="list-group-item list-group-item-action d-flex gap-3 py-3">
+                    <img src="finerDetails.jpg" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+                    <div class="d-flex gap-2 w-100 justify-content-between">
+                      <div>
+                        <h5 class="mb-0">Adults Only</h5>
+                        <p class="mb-0 opacity-75">Although we love your children kindly note that this is a <b>child free event</b>.</p>
+                      </div>
+                    </div>
+                </div>
+                  <div class="list-group-item list-group-item-action d-flex gap-3 py-3" >
+                    <img src="finerDetails.jpg" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+                    <div class="d-flex gap-2 w-100 justify-content-between">
+                      <div>
+                        <h5 class="mb-0">Dress Code</h5>
+                        <p class="mb-0 opacity-75">For this wedding, think classy without being overly fancy <b>- it's semiformal</b></p>
+                      </div>
+                    </div>
+                </div>
+                  <div class="list-group-item list-group-item-action d-flex gap-3 py-3">
+                    <img src="finerDetails.jpg" alt="twbs" width="32" height="32" class="rounded-circle flex-shrink-0">
+                    <div class="d-flex gap-2 w-100 justify-content-between">
+                      <div>
+                        <h5 class="mb-0">Note on Gifts</h5>
+                        <p class="mb-0 opacity-75">If you were thinking of <b>giving a gift</b> to
+                             help us start this journey, <b>you can!</b> Feel free to...
+                        </p>
+                        <ol  class="mb-0 opacity-75">
+                            <li>Give a cash gift 
+                                <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#cashDetails">
+                                    <i class="bi bi-info-circle-fill opacity-100" style="color: #355E3B !important;"><small>  Click me</small></i>
+                                  </button>
+                                </li>
+                            <li>Choose a gift from our registry  </li>
+                            <li>Give a gift card from Amazon, Fontana or Courts</li>
+                            <li>Or surprise us in your own special way.</li>
+                            <!-- <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeO7zZzZYgiguX9SHH0DIG9woGhgP6yPnDHr9Sk4FakaDQTww/viewform?usp=sf_link" >RSVP</a></li> -->
+                        </ol>
+                        </br>
+                        <a href="https://www.amazon.com/wedding/share/faceyinglifetogether" class="btn btn-success btn-sm px-4 me-md-2" role="button" aria-disabled="true">Go to Registry</a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeO7zZzZYgiguX9SHH0DIG9woGhgP6yPnDHr9Sk4FakaDQTww/viewform?usp=sf_link" class="btn btn-outline-success fw-bold  btn-sm px-4 me-md-2" role="button" aria-disabled="true">RSVP</a>
+                      </div>
+                    </div>
+                </div>
+                </div>
+                
+              </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="cashDetails" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel" style="color: #355E3B !important;">How to give a cash gift</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p>
+              <i style="color: #355E3B !important;">If any of the following 
+                does not apply to you please feel free to reach out to the bride and groom.</i>    
+            </p>
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      NCB TRANSFER - STEVEN FACEY
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p ><b>Name:</b>Steven Facey</p>
+                        <p ><b>Bank:</b>National Commercial Bank</p>
+                        <p ><b>Branch:</b>UWI</p>
+                        <p ><b>Account Number:</b>404248626</p>
+                        <p ><b>Account Type</b>Personal/Savings</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        NCB TRANSFER - KRISTEN MCKENZIE
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <p ><b>Name:</b>Kristen McKenzie</p>
+                        <p ><b>Bank:</b>National Commercial Bank</p>
+                        <p ><b>Branch:</b> Half Way Tree</p>
+                        <p ><b>Account Number:</b>305184713</p>
+                        <p ><b>Account Type</b>Personal/Savings</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      PAYPAL / ZELLE - KRISTEN MCKENZIE
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      kristen_mckenzie@msn.com
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        PAYPAL  - STEVEN FACEY
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        disilver9@gmail.com
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal">GOT IT!!</button>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+<!-- <div class="d-flex container-fluid h-100 align-items-center justify-content-center" id= "rsvp" style="background-color:antiquewhite;">
+    <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary w-50">
+        <div class="form-floating mb-3">
+          <input type="text" class="form-control" id="floatingInput" placeholder="first name">
+          <label for="floatingInput">First Name</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingInput2" placeholder="last name">
+            <label for="floatingInput">Last Name</label>
+          </div>
+        <button class="w-100 btn btn-lg btn-success" type="submit">Leave my Seat!!</button>
+        <hr class="my-4">
+        <small class="text-body-secondary"><b>Kindly respond by September 8, 2023.</b></small>
+      </form>
+</div> -->
+
+
+
+    </body>
+
+    <script>
+        function getTimeRemaining(endtime) {
+          var t = Date.parse(endtime) - Date.parse(new Date());
+          var seconds = Math.floor((t / 1000) % 60);
+          var minutes = Math.floor((t / 1000 / 60) % 60);
+          var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+          var days = Math.floor(t / (1000 * 60 * 60 * 24));
+          return {
+            'total': t,
+            'days': days,
+            'hours': hours,
+            'minutes': minutes,
+            'seconds': seconds
+          };
+        }
+        
+        function initializeClock(id, endtime) {
+          var clock = document.getElementById(id);
+          var daysSpan = clock.querySelector('.days');
+          var hoursSpan = clock.querySelector('.hours');
+          var minutesSpan = clock.querySelector('.minutes');
+          var secondsSpan = clock.querySelector('.seconds');
+        
+          function updateClock() {
+            var t = getTimeRemaining(endtime);
+        
+            daysSpan.innerHTML = t.days;
+            hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+            minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+            secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+        
+            if (t.total <= 0) {
+              clearInterval(timeinterval);
+            }
+          }
+        
+          updateClock();
+          var timeinterval = setInterval(updateClock, 1000);
+        }
+        
+        var deadline = new Date("2023-10-14");
+        initializeClock('clockdiv', deadline);
+        
+        
+        </script>
+</html>
