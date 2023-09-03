@@ -44,12 +44,19 @@
         #clockdiv{
           font-size: 12px;
         }
+
+        .removeMobile{
+          display: none !important;
+        }
+        
+      
     }
 
     @media(min-width:949px){
         #tabletDetails{
             display: none !important;
         }
+
     }
 
     @media(min-width:440px){
@@ -63,6 +70,10 @@
 
         #clockdiv{
           font-size: 20px;
+        }
+
+        .mobileOnly{
+          display: none !important;
         }
     } 
     
@@ -149,10 +160,13 @@
             </div>
         </div>
         </br>
-            <a href="#bio" class="btn btn-lg btn-light fw-bold border-white bg-white opacity-75">What's Happening
+            <a href="#bio" class="btn btn-lg btn-light fw-bold border-white bg-white opacity-75 removeMobile">What's Happening
                 <b><i class="bi bi-chevron-down"></i></b>
             </a>
+            <a href="#bio" class="btn btn-lg btn-light fw-bold border-white bg-white opacity-50 mobileOnly">Scroll
+            </br>
             <i class="bi bi-chevron-double-down"></i>
+            </a>
 
        
     </main>
@@ -176,9 +190,9 @@
               <!-- <a href="#details" class="btn btn-success btn-lg px-4 me-md-2">
                 View Details <i class="bi bi-chevron-down"></i>
               </a> -->
-              <a href="#details" class="btn btn-lg btn-success fw-bold">View Details
+              <a href="#details" class="btn btn-lg btn-success fw-bold removeMobile">View Details
                 <i class="bi bi-chevron-down"></i>
-            </a>
+              </a>
               <!-- <button type="button" class="btn btn-success btn-lg px-4 me-md-2">View Details</button> -->
           
           </div>
@@ -191,14 +205,14 @@
     </a>
 </div>
 <div class="d-flex container-fluid text-center h-100 bgimg5" id="mobileDetails" style="position: relative;">
-    <a href="#moreDetails" class="btn btn-lg btn-outline-success fw-bold  bg-white" style="position: absolute; bottom:10px; right: 50px;">More Details
+    <!-- <a href="#moreDetails" class="btn btn-lg btn-outline-success fw-bold  bg-white" style="position: absolute; bottom:10px; right: 50px;">More Details
         <i class="bi bi-chevron-down"></i>
-    </a>
+    </a> -->
 </div>
 <div class="d-flex container-fluid text-center h-100 bgimg6" id="tabletDetails" style="position: relative;">
-  <a href="#moreDetails" class="btn btn-lg btn-outline-success fw-bold  bg-white" style="position: absolute; bottom:10px; right: 50px;">More Details
+  <!-- <a href="#moreDetails" class="btn btn-lg btn-outline-success fw-bold  bg-white" style="position: absolute; bottom:10px; right: 50px;">More Details
       <i class="bi bi-chevron-down"></i>
-  </a>
+  </a> -->
 </div>
 <div class="container-fluid h-100" id="moreDetails">
     <div class="row h-100">
